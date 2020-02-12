@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web FlappyBird</title>
+    <style>
+      * {
+        margin: 0 auto;
+        padding: 0;
+      }
+
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+
+  <body>
+    <canvas id="game_canvas" width="375" height="667">
+      您的浏览器不支持canvas
+    </canvas>
+  </body>
+
+  <!-- 直接点击index.html是不能运行的 因为存在CORS -->
+  <!-- 访问服务器上的html文件是以http的协议方式去打开 有网络交互
+直接打开html文件是以file协议的方式去打开，没有网络交互 -->
+  <script type="module" src="./game.js"></script>
+</html>
